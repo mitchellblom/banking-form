@@ -11,19 +11,19 @@
 	 	 <fieldset>
 		  	<h1>The Banking Form</h1>
 			  	<label for="Applicant first name">Applicant first name</label>
-			  	<input type="Text" name="" value="" placeholder="">
+			  	<input type="Text" name="" value="" placeholder="" pattern="[a-z]{1,15}>
 
 			  	<label for="Applicant middle initial">Applicant middle initial</label>
-			  	<input type="Text" name="" value="" placeholder="">
+			  	<input type="Text" name="" value="" placeholder="" pattern="[a-z]{1,15}>
 
 			  	<label for="Applicant last name">Applicant last name</label>
-			  	<input type="Text" name="" value="" placeholder="">
+			  	<input type="Text" name="" value="" placeholder="" pattern="[a-z]{1,15}>
 
 			  	<label for="Applicant address">Applicant address</label>
 			  	<input type="Text" name="" value="" placeholder="">
 
 			  	<label for="Applicant occupation">Applicant occupation</label>
-			  	<input type="Text" name="" value="" placeholder="">
+			  	<input type="Text" name="" value="" placeholder="" pattern="[a-z]{1,15}>
 
 			  	<label for="Applicant employer">Applicant employer</label>
 			  	<input type="Text" name="" value="" placeholder="">
@@ -75,21 +75,20 @@
 
 		<fieldset>
 				<label for ="email">Email Address</label>
-				<input type="email" name="">
+				<input type="email" name="" pattern=pattern="[^ @]*@[^ @]*">
 				<label for ="tel">Phone number</label>
-				<input type="tel" name="">
+				<input type="tel" name="" pattern="[1-9]{1,10}>
 				<label for ="linkedin">LinkedIn URL</label>
-				<input type="URL" name="">
+				<input type="URL" name="" pattern="(www.linkedin.com/)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]){1,50}">
 		</fieldset>
 
 	</html>
 
 
 <!--
-A text area to allow for additional comments
-Applicant email address
-Applicant telephone number
-Applicant LinkedIn URL
-Contact GitHub API Training Shop Blog About
+for name       pattern="[a-z]{1,15}"
+for tel        pattern="[1-9]{1,10}"
+for email      pattern=pattern="[^ @]*@[^ @]*"
+for linked in  pattern="(https://www.linkedin.com/)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]){1,50}"
 
 -->
